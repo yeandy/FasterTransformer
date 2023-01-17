@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 cmake_minimum_required(VERSION 3.8 FATAL_ERROR) # for PyTorch extensions, version should be greater than 3.13
+set(CMAKE_CUDA_COMPILER /usr/local/cuda/bin/nvcc)
 project(FasterTransformer LANGUAGES CXX CUDA)
 
 find_package(CUDA 10.2 REQUIRED)
